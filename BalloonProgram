@@ -1,0 +1,40 @@
+class Balloon {
+  float dHeight;
+  float dia;
+  
+  Balloon(float _dH, float _dia) {
+    dHeight = _dH;
+    
+  }
+  
+  void levitate() {
+    dHeight -= 1;
+  }
+  
+  void inflate() {
+    dia += 1;
+  }
+}
+
+Balloon myBalloon;
+  float balloonOne = (float)(Math.random()*(500));
+  float balloonTwo = (float)(Math.random()*(500));
+  float balloonThree = (float)(Math.random()*(500));
+void setup() {
+  size(500,500);
+  myBalloon = new Balloon(height,1.0);
+  
+}
+
+void draw() {
+  background(100);
+  myBalloon.inflate();
+  myBalloon.levitate();
+  fill(255,0,0);
+  ellipse(balloonOne, myBalloon.dHeight, myBalloon.dia, myBalloon.dia);
+  fill(0,255,0);
+  ellipse(balloonTwo, myBalloon.dHeight, myBalloon.dia, myBalloon.dia);
+  fill(0,0,255);
+  ellipse(balloonThree, myBalloon.dHeight, myBalloon.dia, myBalloon.dia);
+}
+
