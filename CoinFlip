@@ -8,14 +8,19 @@ void draw()
 {
   background(150);
   int numHeads = 0;
+  int numTails = 0;
   for (int x = 40; x < 500; x = x + 60) {
     Coin bob = new Coin (x, 150);
     bob.show();
     if(bob.heads == true) {
       numHeads++;
     }
+    else {
+      numTails++;
+    }
   }
   text("There are " + numHeads + " heads up coins",150,250);
+  text("There are " + numTails + " tails up coins",350,250);
 }
 void mousePressed()
 {
