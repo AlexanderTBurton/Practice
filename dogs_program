@@ -1,0 +1,39 @@
+void setup() {
+  System.out.println("--Dog 1--");
+  Dog dog1 = new Dog();
+  Dog dog2 = new Dog();
+  int dog1Height = dog1.getHeight();
+  float dog1Weight = dog1.getWeight();
+  System.out.println(dog1Height);
+  System.out.println(dog1Weight);
+  dog1.bark();
+  
+  System.out.println("--Dog 2--");
+  dog2.setHeight(3);
+  int dog2Height = dog2.getHeight();
+  dog2.setWeight(8);
+  float dog2Weight = dog2.getWeight();
+  System.out.println(dog2Height);
+  System.out.println(dog2Weight);
+  
+  System.out.println("--English Bull Dog 1--");
+  EnglishBD ebd1 = new EnglishBD();
+  int ebd1Height = ebd1.getHeight();
+  float ebd1Weight = ebd1.getWeight();
+  int ebd1IQ = ebd1.getIQ();
+  System.out.println(ebd1Height);
+  System.out.println(ebd1Weight);
+  System.out.println("Get IQ: " + ebd1IQ);
+  ebd1.bark();
+  
+  System.out.println("--English Bull Dog 2--");
+  EnglishBD ebd2 = new EnglishBD();
+  int ebd2Height = ebd2.getHeight();
+  float ebd2Weight = ebd2.getWeight();
+  ebd2.setIQ(1000);
+  int ebd2IQ = ebd2.getIQ();
+  System.out.println(ebd2Height);
+  System.out.println(ebd2Weight);
+  System.out.println("Set IQ: " + ebd2IQ); 
+  ebd2.bark();
+}
