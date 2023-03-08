@@ -1,6 +1,6 @@
 class Dog {
-  int dHeight;
-  float weight;
+  private int dHeight;
+  private float weight;
   
   Dog() {
     dHeight = 5;
@@ -12,23 +12,23 @@ class Dog {
     weight = weight_;
   }
   
-  int getHeight() {
+  public int getHeight() {
     return dHeight;
   }
   
-  void setHeight(int dHeight_) {
+  public void setHeight(int dHeight_) {
     dHeight = dHeight_;
   }
   
-  float getWeight() {
+  public float getWeight() {
     return weight;
   }
   
-  void setWeight(float weight_) {
+  public void setWeight(float weight_) {
     weight = weight_;
   }
   
-  void bark() {
+  public void bark() {
     System.out.println("Woof.");
   }
 }
