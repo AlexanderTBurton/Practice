@@ -1,5 +1,5 @@
 class EnglishBD extends Dog {
-  int iq;
+  private int iq;
   EnglishBD() {
     iq = (int)(Math.random()*5);
   }
@@ -8,15 +8,15 @@ class EnglishBD extends Dog {
     iq = iq_;
   }
   
-  int getIQ() {
+  public int getIQ() {
     return iq;
   }
   
-  void setIQ(int iq_) {
+  public void setIQ(int iq_) {
     iq = iq_;
   }
   
-  void bark() {
+  public void bark() {
     System.out.println("bowwowww");
   }
 }
